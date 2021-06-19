@@ -19,6 +19,6 @@ jobs:
           # 既定値はワークフローファイルを所有するユーザまたは Organization
           scope: '@elzup'
       - run: yarn
-      - run: yarn publish
+      - run: yarn publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
